@@ -30,13 +30,14 @@ a:hover {
 	color: #666;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	border: 0;
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Varela Round', sans-serif;
 	line-height: 100%;
+	font-weight: normal;
 }
 
 body {
@@ -116,7 +117,6 @@ body {
 
 .top-rt h1,
 .top-rt h3 {
-	font-weight: normal;
 	color: #FFF;
 }
 
@@ -158,7 +158,6 @@ a.but-g-play {
 	margin-bottom: 10px;
 	text-align: center;
 	font-size: 32px;
-	font-weight: normal;
 	color: rgb(233, 124, 15);
 }
 
@@ -218,7 +217,6 @@ a.but-g-play {
 	margin-bottom: 12px;
 	text-align: center;
 	font-size: 32px;
-	font-weight: normal;
 	color: rgb(255, 255, 255);
 }
 
@@ -277,21 +275,28 @@ ul.features li {
 
 /* Section 3 */
 .sect-3 {
-	width: 100%;
-	height: 560px;
-	background-color: #FFF;
 	float: left;
+	width: 100%;
+	height: 372px;
+	padding-top: 90px;
+	background: rgb(255, 255, 255) url('../img/city.png') 50% 100% repeat-x;
 }
 
 .sect-3 .inner_wrapper {
-	width: 900px;
+	width: 740px;
 }
 
 .sect-3 h4 {
-	font-size: 32px;
-	color: #474747;
+	margin-bottom: 9px;
 	text-align: center;
-	padding-top: 70px;
+	font-size: 32px;
+	color: rgb(233, 124, 15);
+}
+
+.sect-3 p {
+	text-align: center;
+	line-height: 160%;
+	color: rgb(153, 153, 153);
 }
 
 /*###.team_member_wrapper {
