@@ -21,13 +21,13 @@ $(document).ready(function () {
 	function () {
 		$(this).animate({
 			marginTop: '0px',
-			height: '462px'
+			height: '434px'
 		}, 500/*, function () {}*/);
 	},
 	function () {
 		$(this).animate({
-			marginTop: '40px',
-			height: '422px'
+			marginTop: '30px',
+			height: '404px'
 		}, 500/*, function() {}*/);
 	});
 });
