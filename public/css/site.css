@@ -155,9 +155,9 @@ a.but-g-play {
 }
 
 .sect-1 h2 {
-	margin-bottom: 11px;
+	margin-bottom: 10px;
 	text-align: center;
-	font-size: 31px;
+	font-size: 32px;
 	font-weight: normal;
 	color: rgb(233, 124, 15);
 }
@@ -215,8 +215,10 @@ a.but-g-play {
 }
 
 .sect-2 h3 {
+	margin-bottom: 12px;
 	text-align: center;
 	font-size: 32px;
+	font-weight: normal;
 	color: rgb(255, 255, 255);
 }
 
@@ -224,20 +226,18 @@ ul.features {
 	width: 760px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 60px;
+	/*###padding-top: 60px;*/
 	list-style: none;
 }
 
 ul.features li {
 	float: left;
 	width: 280px;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-bottom: 80px;
+	margin: 45px 50px 56px 50px;
 	text-align: center;
 }
 
-.features .feature_icon {
+.features .ico-feat {
 	width: 55px;
 	height: 55px;
 	margin-left: auto;
@@ -246,24 +246,26 @@ ul.features li {
 	background: url('../img/ico_features.png') 0 0 no-repeat;
 }
 
-.feature_icon.puzzle {
+.ico-feat.puzzle {
 	background-position: 0px 0px;
 }
 
-.feature_icon.offline {
+.ico-feat.offline {
 	background-position: 0px -55px;
 }
 
-.feature_icon.map {
+.ico-feat.map {
 	background-position: 0px -110px;
 }
 
-.feature_icon.guide {
+.ico-feat.guide {
 	background-position: 0px -165px;
 }
 
 .features p.feature_title {
-	font-size: 18px;
+	margin-bottom: 3px;
+	font-size: 19px;
+	line-height: 100%;
 	color: rgb(255, 255, 255);
 }
 
@@ -527,13 +529,12 @@ ul.features li {
 	}
 
 	ul.features li {
+		clear: both;
+		float: none;
 		width: 280px;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 80px;
-		float: none;
-		text-align: center;
-		clear: both;
+		/*###text-align: center;*/
 	}
 }
 
