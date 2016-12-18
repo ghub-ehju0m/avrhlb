@@ -39,6 +39,6 @@ $(window).on('load', function () {
 	$('.pg').delay(800).fadeIn(400);
 	$('.pg-top').show().addClass('animated fadeInDownBig');
 	//setTimeout(function(){}, 800);
-	setTimeout(function(){$('.top-lf').show().addClass('animated fadeInUpBig');}, 1100);
-	setTimeout(function(){$('.top-rt').show().addClass('animated fadeInUpBig');}, 1300);
+	setTimeout(function(){$('.top-pic').show().addClass('animated fadeInUpBig');}, 1100);
+	setTimeout(function(){$('.top-txt').show().addClass('animated fadeInUpBig');}, 1300);
 });

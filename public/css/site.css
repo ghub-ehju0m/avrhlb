@@ -81,31 +81,46 @@ body {
 
 /* Header */
 .pg-top {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	float: left;
 	width: 100%;
 	height: 769px;
+	padding-left: 50%;
 	overflow: hidden;
 	background: rgb(13, 116, 145) url('../img/header_background.jpg') 50% 0 no-repeat;
 	background-size: cover;
 }
 
-.top-lf {
+.top-txt {
+	position: relative;
 	float: left;
-	width: 483px;
-	height: 629px;
-	margin-top: 140px;
-	background-image: url('../img/iphone_hand.png');
-	background-repeat: no-repeat;
-}
-
-.top-rt {
-	float: right;
 	width: 480px;
-	height: auto;
+	/*###height: auto;*/
+	z-index: 2;
+	margin-left: 20px;
+	margin-right: -500px;
 	margin-top: 205px;
 }
 
-.top-rt h1 {
+.top-txt:after {
+	content: '';
+	display: table;
+	clear: both;
+	line-height: 0;
+}
+
+.top-pic {
+	float: left;
+	width: 483px;
+	height: 100%;/*^^^629px*/
+	z-index: 1;
+	margin-left: -500px;
+	margin-right: 17px;
+	background: url('../img/iphone_hand.png') 50% 100% no-repeat;
+}
+
+.top-txt h1 {
 	margin: 0 0 65px 0;
 	padding: 20px 0 27px 125px;
 	background: url('../img/logo.png') 0 0 no-repeat;
@@ -114,7 +129,7 @@ body {
 	color: #FFF;
 }
 
-.top-rt h3 {
+.top-txt h3 {
 	margin: 0 0 29px 0;
 	padding: 0;
 	font-size: 36px;
@@ -452,7 +467,7 @@ ul.features li {
 
 
 /* Responsive */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
 	.inner_wrapper {
 		width: 100%;
 		/*###margin-left: 0;*/
@@ -463,23 +478,49 @@ ul.features li {
 
 	.pg-top {
 		height: auto;
+		padding-left: 20%;
+		padding-right: 20%;
+		padding-bottom: 39.6%;
 	}
 
-	.top-lf {
-		margin-top: 40%;
-		max-width:690px;
-		background-size: 100%;
-		background-position: center bottom;
-	}
-
-	.top-rt {
-		/*###float: right;*/
+	/*^^^.top-txt {
+		/*###float: right;* /
 		position: absolute;
 		width: 80%;
-		height: auto;
+		/*###height: auto;* /
 		margin-left: 10%;
 		margin-right: 10%;
 		margin-top: 10%;
+	}*/
+
+	.top-txt {
+		float: none;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+	}
+
+	/*^^^.top-pic {
+		margin-top: 40%;
+		/*###max-width: 690px;* /
+		background-size: 100%;
+		/*###background-position: center bottom;* /
+	}*/
+
+	.top-pic {
+		float: none;
+		position: absolute;
+		left: 36.33%;
+		bottom: 0;
+		width: 27.33%;
+		height: 51.5%;
+		margin: 0;
+		background-size: 100%;
+	}
+
+	.top-txt h1 {
+		margin-bottom: 25px;
 	}
 
 	.sect-1_toys {
@@ -523,9 +564,9 @@ ul.features li {
 
 
 @media screen and (max-width: 780px) {
-	.top-lf {
+	/*^^^.top-pic {
 		margin-top: 50%;
-	}
+	}*/
 
 	.sect-1_toys {
 		width: 100%;
@@ -565,9 +606,9 @@ ul.features li {
 
 
 @media screen and (max-width: 590px) {
-	.top-lf {
+	/*^^^.top-pic {
 		margin-top: 80%;
-	}
+	}*/
 
 	.sect-1 {
 		height: auto;
@@ -593,7 +634,7 @@ ul.features li {
 
 
 @media screen and (max-width: 550px) {
-	.top-rt a.but-appsto {
+	.top-txt a.but-appsto {
 		margin-bottom: 20px;
 	}
 
@@ -631,15 +672,15 @@ ul.features li {
 
 
 @media screen and (max-width: 490px) {
-	.top-lf {
-		margin-top: 110%;
-		width: 90%;
-		background-size: 100%;
-		background-position: center bottom;
-		height: 575px;
-	}
-
-	.top-rt {
+	.top-txt {
 		margin-top: 20%;
 	}
+
+	/*^^^.top-pic {
+		width: 90%;
+		height: 575px;
+		margin-top: 110%;
+		/*###background-size: 100%;* /
+		/*###background-position: center bottom;* /
+	}*/
 }
