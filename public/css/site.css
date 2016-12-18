@@ -137,23 +137,23 @@ body {
 	color: #FFF;
 }
 
-/* Appstore Button */
-a.but-appsto {
-	display: block;
-	float: left;
+/* Appstore, Google Play buttons */
+a.but-appsto,
+a.but-g-play {
+	display: inline-block;
+	/*###float: left;*/
 	height: 71px;
-	width: 212px;
-	margin-right: 22px;
 	background: url('../img/store_buttons.png') 0 0 no-repeat;
 }
 
-/* Google Play Button */
+a.but-appsto {
+	width: 212px;
+	margin-right: 19px;
+}
+
 a.but-g-play {
-	display: block;
-	float: left;
-	height: 71px;
 	width: 245px;
-	background: url('../img/store_buttons.png') -213px 0 no-repeat;
+	background-position: -213px 0;
 }
 
 /* Section 1 */
@@ -410,9 +410,10 @@ ul.features li {
 }
 
 .fin-call-2-act {
-	width: 480px;/*###441px*/
-	margin-left: auto;
-	margin-right: auto;
+	/*###width: 480px;441px*/
+	text-align: center;
+	/*###margin-left: auto;*/
+	/*###margin-right: auto;*/
 }
 
 
@@ -478,8 +479,8 @@ ul.features li {
 
 	.pg-top {
 		height: auto;
-		padding-left: 20%;
-		padding-right: 20%;
+		padding-left: 15%;
+		padding-right: 15%;
 		padding-bottom: 39.6%;
 	}
 
@@ -499,6 +500,7 @@ ul.features li {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 50px;
+		text-align: center;
 	}
 
 	/*^^^.top-pic {
@@ -511,7 +513,7 @@ ul.features li {
 	.top-pic {
 		float: none;
 		position: absolute;
-		left: 36.33%;
+		left: 33.33%;
 		bottom: 0;
 		width: 27.33%;
 		height: 51.5%;
@@ -520,6 +522,7 @@ ul.features li {
 	}
 
 	.top-txt h1 {
+		display: inline-block;
 		margin-bottom: 25px;
 	}
 
@@ -605,6 +608,31 @@ ul.features li {
 
 
 
+@media screen and (max-width: 720px) {
+	.top-txt h1 {
+		padding: 20px 0 22px 100px;
+		font-size: 32px;
+		background-size: 80px 80px;
+	}
+
+	.top-txt h3 {
+		font-size: 27px;
+	}
+
+	.top-txt a.but-appsto {
+		margin-bottom: 30px;
+	}
+
+	.top-txt a.but-appsto,
+	.top-txt a.but-g-play {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
 @media screen and (max-width: 590px) {
 	/*^^^.top-pic {
 		margin-top: 80%;
@@ -655,15 +683,14 @@ ul.features li {
 		margin-bottom: 30px;
 	}
 
-	a.but-appsto {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
+	.sect-4 a.but-appsto {
 		margin-bottom: 30px;
 	}
 
-	a.but-g-play {
-		float: none;
+	.sect-4 a.but-appsto,
+	.sect-4 a.but-g-play {
+		display: block;
+		/*###float: none;*/
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -672,9 +699,17 @@ ul.features li {
 
 
 @media screen and (max-width: 490px) {
-	.top-txt {
-		margin-top: 20%;
+	.top-txt h1 {
+		padding: 2px 0 1px 100px;
 	}
+
+	.top-txt h3 {
+		margin-bottom: 14px;
+	}
+
+	/*^^^.top-txt {
+		margin-top: 20%;
+	}*/
 
 	/*^^^.top-pic {
 		width: 90%;
