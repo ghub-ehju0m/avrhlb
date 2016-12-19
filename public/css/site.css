@@ -144,6 +144,9 @@ a.but-g-play {
 	/*###float: left;*/
 	height: 71px;
 	background: url('../img/store_buttons.png') 0 0 no-repeat;
+	-webkit-transition: opacity 0.4s linear;/*###ease-in-out*/
+	-o-transition: opacity 0.4s linear;/*###ease-in-out*/
+	transition: opacity 0.4s linear;/*###ease-in-out*/
 }
 
 a.but-appsto {
@@ -154,6 +157,11 @@ a.but-appsto {
 a.but-g-play {
 	width: 245px;
 	background-position: -213px 0;
+}
+
+a.but-appsto:hover,
+a.but-g-play:hover {
+	opacity: 0.67;
 }
 
 /* Section 1 */
@@ -192,8 +200,9 @@ a.but-g-play {
 
 .sect-1_toys {
 	width: 932px;/*###900px*/
-	/*###height: 434px;462px*/
+	height: 434px;/*###462px*/
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .sect-1_toy-1,
@@ -201,10 +210,13 @@ a.but-g-play {
 .sect-1_toy-3 {
 	float: left;
 	width: 284px;
-	height: 404px;
+	height: 434px;
 	margin-top: 30px;/*###40px*/
 	background-position: top center;
 	background-repeat: no-repeat;
+	-webkit-transition: transform 0.4s linear;/*###ease-in-out*/
+	-o-transition: transform 0.4s linear;/*###ease-in-out*/
+	transition: transform 0.4s linear;/*###ease-in-out*/
 }
 
 .sect-1_toy-1 {
@@ -220,6 +232,14 @@ a.but-g-play {
 .sect-1_toy-3 {
 	margin-left: 40px;
 	background-image: url('../img/toy_3.png');
+}
+
+.sect-1_toy-1:hover,
+.sect-1_toy-2:hover,
+.sect-1_toy-3:hover {
+	-webkit-transform: translate3d(0, -30px, 0);
+	-ms-transform: translate3d(0, -30px, 0);
+	transform: translate3d(0, -30px, 0);
 }
 
 /* Section 2 */
@@ -447,6 +467,9 @@ ul.features li {
 	margin-right: 10px;
 	background-image: url('../img/team_social_icons.png');
 	background-repeat: no-repeat;
+	-webkit-transition: opacity 0.4s linear;/*###ease-in-out*/
+	-o-transition: opacity 0.4s linear;/*###ease-in-out*/
+	transition: opacity 0.4s linear;/*###ease-in-out*/
 }
 
 .bot-social a.ico-tw {
@@ -460,6 +483,10 @@ ul.features li {
 .bot-social a.ico-appsto {
 	background-position: -93px 0px;
 	margin-right: 0px;
+}
+
+.bot-social a:hover {
+	opacity: 0.67;
 }
 
 /* Animations (Compressed)*/
