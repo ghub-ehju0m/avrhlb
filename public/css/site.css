@@ -213,6 +213,10 @@ a.but-g-play {
 	background-position: -213px 0;
 }
 
+.top-txt a.but-g-play {
+	margin-right: -20px;
+}
+
 a.but-appsto:hover,
 a.but-g-play:hover {
 	opacity: 0.67;
@@ -620,6 +624,10 @@ ul.features li {
 		margin-right: auto;
 		margin-top: 50px;
 		text-align: center;
+	}
+
+	.top-txt a.but-g-play {
+		margin-right: 0px;
 	}
 
 	/*^^^.top-pic {
